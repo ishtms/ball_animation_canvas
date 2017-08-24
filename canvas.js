@@ -28,8 +28,8 @@ let Ball = function(_color, _radius, _x, _y, _speedX, _speedY){
     this.update = function(_speedX, _speedY){
         if(cursorProps._xPos != null || cursorProps._yPos != null){
             if(Math.abs(this.x - cursorProps._xPos) <=30  && Math.abs(this.y - cursorProps._yPos) <= 30){
-                if(this.radius < 75){
-                    this.radius += 4;
+                if(this.radius < 30){
+                    this.radius += 1;
                 }
             }else{
                 if(this.radius > this.originalRadius){
@@ -71,7 +71,7 @@ let _randomColorGenerator = () => {
 //Random Radius generator for balls;
 
 let _randomRadiusGenerator = () =>{
-    return Math.floor(Math.random()*20);
+    return Math.floor(Math.random()*4);
 }
 
 //Generate random numbers in range
