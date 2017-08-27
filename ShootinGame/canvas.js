@@ -95,8 +95,8 @@ function animate(){
     context.arc(windowInfo.x, windowInfo.y, 5, 0, Math.PI * 2);
     context.fill();
     context.closePath();
-    // context.font = "20px sans-serif";
-    // context.fillText("Score - "+ score,canvas.width - 100,50);
+     context.font = "20px sans-serif";
+     context.fillText("Score - "+ score,canvas.width - 200,50);
     var boxX, boxY;
     for(let index = 0; index < arr.length; index ++){
         boxX = arr[index].x;
