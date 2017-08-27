@@ -30,16 +30,22 @@ function Particles(_x, _y, _radius, _speedY){
 let particleArray = [];
 let _yPos = 0, radius, speedY, _xPos;
 
-for(var index = 0; index < 1000; index++){
+for(var index = 0; index < 2000; index++){
     radius = randomRadiusGenerator();
     _xPos = randomXGenerator();
     
     if(radius == 1){
-        speedY = 0.7
+        speedY = 0.3
     }else if(radius == 2){
-        speedY = 1.5
+        speedY = 0.8
     }else if(radius == 3){
-        speedY = 2.2
+        speedY = 1.3
+    }else if(radius == 4){
+        speedY = 1.8
+    }else if(radius == 5){
+        speedY = 2.3
+    }else if(radius == 6){
+        speedY = 2.8
     }
     
     particleArray.push(new Particles(_xPos, _yPos, radius, speedY));
