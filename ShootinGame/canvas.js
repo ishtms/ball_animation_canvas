@@ -52,7 +52,7 @@ var y_pos = -60;
 
 function init(){
 
-    for(var index = 0; index < 1000; index++){
+    for(var index = 0; index < 10000; index++){
         arr.push(new Enemies(100,40, 40, Math.random() * canvas.width, y_pos));
         y_pos -=60;
     }
@@ -102,9 +102,8 @@ function animate(){
         boxX = arr[index].x;
         boxY = arr[index].y;
         arr[index].update(boxX, boxY);
-        arr[index].y += 4;
+        arr[index].y += 7;
     }
-    console.log(y_pos)
 }
 
 animate();
